@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading;
 using HelloWorld.Math;
 
 namespace HelloWorld
@@ -14,7 +16,8 @@ namespace HelloWorld
 	{
 		static void Main(string[] args)
 		{
-			Exercises.Exercises.MaximumNumberInListEntered();
+			String path = @"D:\@ME\CSharpFundamentals\HelloWorld\Hello Words.txt";
+            Console.WriteLine("Longest words: " + Exercises.Exercises.GetLongestWords(path));
 		}
 	}
 }
